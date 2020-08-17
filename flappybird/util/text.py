@@ -3,9 +3,9 @@ import pygame
 
 pygame.font.init()
 
-score_font = pygame.font.Font('pricedown bl.ttf', 30)
-font = pygame.font.Font('pricedown bl.ttf', 14)
-press = pygame.font.Font('pricedown bl.ttf', 45)
+score_font = pygame.font.Font('flappybird/util/pricedown bl.ttf', 30)
+font = pygame.font.Font('flappybird/util/pricedown bl.ttf', 14)
+press = pygame.font.Font('flappybird/util/pricedown bl.ttf', 45)
 
 
 def by_nanda(screen):
