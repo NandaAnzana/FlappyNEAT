@@ -6,7 +6,7 @@ class Pipe:
 
     def __init__(self, top=False):
         self.x = 1200
-        self.image = pygame.transform.scale(pygame.image.load('flappybird/images/pipe/pipe0.png'), (100,1024))
+        self.image = pygame.transform.scale(pygame.image.load('src/images/pipe/pipe0.png'), (100,1024))
         self.top = top
         if self.top:
             self.image = pygame.transform.flip(self.image, False, True)

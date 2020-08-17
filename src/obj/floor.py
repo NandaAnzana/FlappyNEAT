@@ -5,7 +5,7 @@ class Floor:
     def __init__(self):
         self.x = 0
         self.y = 650
-        self.image = pygame.image.load('flappybird/images/background/floor0.png').convert()
+        self.image = pygame.image.load('src/images/background/floor0.png').convert()
 
     def draw(self, screen):
         screen.blit(self.image, (self.x,self.y))

@@ -10,9 +10,9 @@ class Bird:
         self.gravity = 0.2
         self.jumping = -7
         self.movement = 0
-        self.images = [pygame.transform.scale(pygame.image.load("flappybird/images/bird/bird0.png").convert_alpha() , (int(1090/11),int(750/11))),
-                      pygame.transform.scale(pygame.image.load("flappybird/images/bird/bird1.png").convert_alpha(), (int(1090/11),int(750/11))),
-                      pygame.transform.scale(pygame.image.load("flappybird/images/bird/bird0.png").convert_alpha(),(int(1090/11),int(750/11)))]
+        self.images = [pygame.transform.scale(pygame.image.load("src/images/bird/bird0.png").convert_alpha() , (int(1090/11),int(750/11))),
+                      pygame.transform.scale(pygame.image.load("src/images/bird/bird1.png").convert_alpha(), (int(1090/11),int(750/11))),
+                      pygame.transform.scale(pygame.image.load("src/images/bird/bird0.png").convert_alpha(),(int(1090/11),int(750/11)))]
         self.image = self.images[self.i]
         self.rect = self.image.get_rect(center=(self.x,self.y))
 

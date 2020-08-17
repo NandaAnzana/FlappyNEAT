@@ -1,9 +1,9 @@
 import pygame, sys
-from flappybird.obj.bird import Bird
-from flappybird.obj.floor import Floor
-from flappybird.obj.pipe import *
-from flappybird.util.collision import check_collision
-from flappybird.util.text import *
+from src.obj.bird import Bird
+from src.obj.floor import Floor
+from src.obj.pipe import *
+from src.util.collision import check_collision
+from src.util.text import *
 import pickle
 
 
@@ -12,9 +12,9 @@ def main():
 
 	pygame.init()
 	res = (1080,720)
-	pygame.display.set_caption("FlappyBird555")
+	pygame.display.set_caption("FlappyBirdNEAT")
 	screen = pygame.display.set_mode(res)
-	bg = pygame.image.load('flappybird/images/background/background0.png').convert()
+	bg = pygame.image.load('src/images/background/background0.png').convert()
 	bg = pygame.transform.scale(bg,res)
 	clock = pygame.time.Clock()
 	# SPAWNPIPE = pygame.USEREVENT
@@ -32,7 +32,7 @@ def main():
 
 
 	try:
-	    with open("flappybird/high score.pkl", "rb") as f:
+	    with open("src/high score.pkl", "rb") as f:
 	        high_score_all_time = pickle.load(f)
 	except:
 	    high_score_all_time = 0
@@ -40,7 +40,7 @@ def main():
 	while True:
 	    for event in pygame.event.get():
 	        if event.type == pygame.QUIT:
-	            with open("flappybird/high score.pkl", "wb") as f:
+	            with open("src/high score.pkl", "wb") as f:
 	                pickle.dump(high_score_all_time, f)
 	            pygame.quit()
 	            sys.exit()
