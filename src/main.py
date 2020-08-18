@@ -2,7 +2,7 @@ import pygame, sys
 from src.obj.bird import Bird
 from src.obj.floor import Floor
 from src.obj.pipe import *
-from src.util.collision import check_collision
+from src.util.collision import check_collision, check_collision_neat
 from src.util.text import *
 import pickle
 
@@ -14,11 +14,11 @@ def main():
 	res = (1080,720)
 	pygame.display.set_caption("FlappyBirdNEAT")
 	screen = pygame.display.set_mode(res)
+	icon = pygame.image.load('src/images/icon/flappyneat.ico').convert_alpha()
+	pygame.display.set_icon(icon)
 	bg = pygame.image.load('src/images/background/background0.png').convert()
 	bg = pygame.transform.scale(bg,res)
 	clock = pygame.time.Clock()
-	# SPAWNPIPE = pygame.USEREVENT
-	#pygame.time.set_timer(SPAWNPIPE, 3000)
 
 	game_start = False
 	frame_count = 0
@@ -52,8 +52,8 @@ def main():
 	                list_pipe.clear()
 	                bird.rect.center = (150,300)
 	                bird.movement = 0
+	                frame_count = 0
 	                score = 0
-
 	    screen.blit(bg, (0,0))
 	    if game_start:
 	        frame_count += 1
@@ -75,7 +75,6 @@ def main():
 	        bird.update(screen)
 	        game_start = check_collision(list_pipe, bird)
 	        count_score(screen, score)
-	                    
 	    else:
 	        if high_score_all_time < score:
 	            high_score_all_time = score
