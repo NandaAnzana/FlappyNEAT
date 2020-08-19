@@ -81,8 +81,8 @@ def eval(genomes, config):
 	    	pygame.draw.line(screen, (255,0,0), bird.rect.center, list_pipe[pip_ind+1].midbottom)
 	    	bird.update(screen)
 	    	ge[i].fitness += 0.1
-	    	output = nets[i].activate((bird.rect.centery, abs(bird.rect.centery - list_pipe[pip_ind].midtop[1]),
-										abs(bird.rect.centery - list_pipe[pip_ind+1].midbottom[1])))
+	    	output = nets[i].activate((bird.rect.centery, bird.rect.centery - list_pipe[pip_ind].midtop[1],
+										bird.rect.centery - list_pipe[pip_ind+1].midbottom[1]))
 	    	if output[0] > 0.5:
 	    		bird.jump()
 	    birds, ge, nets = check_collision_neat(list_pipe, birds, ge, nets)
