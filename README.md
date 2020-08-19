@@ -7,5 +7,13 @@ Flappy Bird is an arcade-style game in which the player controls the bird Faby, 
   <img src="images\Flappy_Bird_gameplay.png" alt="Original flappy bird">
 </p>
 <br>
-The difficulty in flappy bird made me interested to build a replica for desktop.
+<p>Flappy bird made me interested to build a replica for desktop version. Because the original version makes me wanna throw pizza to the window, so i made my version much more difficult. So, enjoy it.
+
+First you need change your working directory
+
+  cd your_path_name
+
+  git clone https://github.com/NandaAnzana/FlappyNEAT.git
+
+
 </p>
