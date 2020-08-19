@@ -7,7 +7,6 @@ Flappy Bird is an arcade-style game in which the player controls the bird Faby, 
 <p align="center">
   <img src="images\Flappy_Bird_gameplay.png" alt="Original flappy bird">
 </p>
-<br>
 Flappy bird made me interested to build a replica for desktop version. Because the original version makes me wanna throw pizza to the window, so i made my version much more difficult. So, enjoy it.
 
 First you must make sure your python version is 3.x and pygame already installed in your environment. Then you change your working directory to the folder you want to put this flappyNEAT.
@@ -38,6 +37,7 @@ One of the trickiest part when build this, is to set how the bird see the pipe. 
 <p align="center">
   <img src="images\FlappyAI.gif" alt="FlappyNEAT">
 </p>
+
 First you must make sure your python version is 3.X, pygame and neat-python already installed in your environment. Then you change your working directory to the folder you want to put this flappyNEAT.
 ```
 cd your_path_name
