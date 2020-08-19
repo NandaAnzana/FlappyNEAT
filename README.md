@@ -9,7 +9,7 @@ Flappy Bird is an arcade-style game in which the player controls the bird Faby, 
 </p>
 Flappy bird made me interested to build a replica for desktop version. Because the original version makes me wanna throw pizza to the window, so i made my version much more difficult. So, enjoy it.
 
-First you must make sure your python version is 3.x and pygame already installed in your environment. Then you change your working directory to the folder you want to put this flappyNEAT.
+First you must make sure your python version is 3.x and pygame already installed in your environment. Or you can install all the package from requirements.txt. Then you change your working directory to the folder you want to put this flappyNEAT.
 ```
 cd your_path_name
 ```
@@ -20,6 +20,10 @@ git clone https://github.com/NandaAnzana/FlappyNEAT.git
 Change your directory to FlappyNEAT folder.
 ```
 cd FlappyNEAT
+```
+Install all the package.
+```
+pip install -r requirements.txt
 ```
 Then run playable FlappyNEAT.
 ```
@@ -38,7 +42,7 @@ One of the trickiest part when build this, is to set how the bird see the pipe. 
   <img src="images\FlappyAI.gif" alt="FlappyNEAT">
 </p>
 
-First you must make sure your python version is 3.X, pygame and neat-python already installed in your environment. Then you change your working directory to the folder you want to put this flappyNEAT.
+First you must make sure your python version is 3.x, pygame and neat-python already installed in your environment. Or you can install all the package from requirements.txt. Then you change your working directory to the folder you want to put this flappyNEAT.
 ```
 cd your_path_name
 ```
@@ -49,6 +53,10 @@ git clone https://github.com/NandaAnzana/FlappyNEAT.git
 Change your directory to FlappyNEAT folder.
 ```
 cd FlappyNEAT
+```
+Install all the package.
+```
+pip install -r requirements.txt
 ```
 Then run FlappyNEAT that use NEAT model.
 ```
