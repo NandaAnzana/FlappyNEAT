@@ -1,5 +1,6 @@
 import neat
 import os
+import pickle
 
 
 def config_neat(eval):
@@ -11,3 +12,5 @@ def config_neat(eval):
     stats = neat.StatisticsReporter()
     pop.add_reporter(stats)
     end = pop.run(eval,50)
+    with open("NEATmodel.pkl", "wb") as f:
+    	pickle.dump(end, f)
