@@ -12,8 +12,8 @@ Flappy Bird is an arcade-style game in which the player controls the bird Faby, 
 First you need change your working directory
 
   cd your_path_name
-
+'''
   git clone https://github.com/NandaAnzana/FlappyNEAT.git
-
+'''
 
 </p>
