@@ -12,6 +12,7 @@ import pickle
 
 def eval(genomes, config):
 
+	
 	pygame.init()
 	res = (1080,720)
 	pygame.display.set_caption("FlappyBirdNEAT")
@@ -85,9 +86,9 @@ def eval(genomes, config):
 										bird.rect.centery - list_pipe[pip_ind+1].midbottom[1]))
 	    	if output[0] > 0.5:
 	    		bird.jump()
-	    if score == 50:
+	    if score == 10:
 	    	for i, bird in enumerate(birds):
-	    				ge[i].fitness += 100000
+	    				ge[i].fitness = 100000
 	    birds, ge, nets = check_collision_neat(list_pipe, birds, ge, nets)
 	    count_score(screen, score)
 	    floor.draw(screen)
