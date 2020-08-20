@@ -37,7 +37,7 @@ python flappy.py
 
 NEAT is a method developed by [Kenneth O. Stanley](https://www.cs.ucf.edu/~kstanley/) for evolving arbitrary neural networks. This method based on [Evolving Neural Networks through Augmenting Topologie](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.28.5457&rep=rep1&type=pdf) paper. NEAT-Python is a pure Python implementation of NEAT, with no dependencies other than the Python standard library.
 
-One of the trickiest part when build this, is to set how the bird see the pipe. When the bird too early change the attention to another pipe, the bird always fail even for large generation. When the bird too late change the attention to another pipe, the bird late take the action and fail to keep up the height.
+One of the trickiest part when build this, is to set how the bird sees the pipe. When the bird too early change the attention to another pipe, the bird always fails even for large generation. When the bird too late change the attention to another pipe, the bird late take the action and fail to keep up the height.
 <p align="center">
   <img src="images\FlappyAI.gif" alt="FlappyNEAT">
 </p>
