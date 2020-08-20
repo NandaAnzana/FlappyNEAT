@@ -7,7 +7,7 @@ Flappy Bird is an arcade-style game in which the player controls the bird Faby, 
 <p align="center">
   <img src="images\Flappy_Bird_gameplay.png" alt="Original flappy bird">
 </p>
-Flappy bird made me interested to build a replica for desktop version. Because the original version makes me wanna throw pizza to the window, so i made my version much more difficult. So, enjoy it.
+Flappy bird made me interested to recreate the gameplay in desktop version. Because the original version makes me wanna throw pizza to the window, so I made my version much more difficult. So, enjoy it.
 
 First you must make sure your python version is 3.x and pygame already installed in your environment. Or you can install all the package from requirements.txt. Then you change your working directory to the folder you want to put this flappyNEAT.
 ```
